@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "unbiased-twitter",
+  "version": "1.0",
+
+  "description": "Obfuscates Names and Profile Pictures on Twitter.com",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["lib/jquery-3.1.1.js", "lib/pnglib.js", "lib/identicon.js", "obfuscator.js"]
+    }
+  ]
+
+}
