@@ -2,6 +2,6 @@
     "name": "unbiased-twitter",
     "version": "0.1.0",
     "scripts": {
-      "build": "zip -r unbiased-twitter_$(jq -r '.version' package.json).zip obfuscator.js manifest.json icons lib"
+      "build": "zip -r unbiased-twitter.zip obfuscator.js manifest.json icons lib"
     }
 }
